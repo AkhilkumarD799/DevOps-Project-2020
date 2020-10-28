@@ -1,2 +1,2 @@
-<h1> Hello, Welcome to  DevOps Project 2020! </h1>
+<h1> Welcome to DevOps CI/CD Pipeline in AWS Cloud!! </h1>
 
