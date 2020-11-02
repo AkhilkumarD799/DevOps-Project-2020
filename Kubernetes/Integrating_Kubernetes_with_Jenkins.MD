@@ -49,7 +49,6 @@ Save and run the job.
       - *SSH Publishers*  
 	       - Exec command: 
                 ```sh 
-                ansible-playbook -i /opt/docker/hosts /opt/docker/kubernetes-akhil-deployment.yml;
-                ansible-playbook -i /opt/docker/hosts /opt/docker/kubernetes-akhil-service.yml;
+                ansible-playbook -i /opt/kubernetes/hosts /opt/kubernetes/kubernetes-akhil-deployement.yml;ansible-playbook -i /opt/kubernetes/hosts /opt/kubernetes/kubernetes-akhil-service.yml
                 ```
 Save and run the job.
