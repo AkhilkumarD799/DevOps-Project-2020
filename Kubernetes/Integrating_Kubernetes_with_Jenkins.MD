@@ -25,14 +25,14 @@
  - *Post-build Actions*
    - Send build artifacts over SSH
      - *SSH Publishers*
-      - SSH Server Name: `ansible-server`
+      - SSH Server Name: `ansible-control-node`
        - `Transfers` >  `Transfer set`
            - Source files: `webapp/target/*.war`
 	       - Remove prefix: `webapp/target`
-	       - Remote directory: `//opt//docker`
+	       - Remote directory: `//opt//kubernetes`
 	       - Exec command: 
                 ```sh 
-                ansible-playbook -i /opt/docker/hosts /opt/docker/create-simple-devops-image.yml --limit localhost;
+                ansible-playbook -i /opt/kubernetes/hosts /opt/kubernetes/push-simple-devops-image.yml;
                 ```
 
 Save and run the job.
